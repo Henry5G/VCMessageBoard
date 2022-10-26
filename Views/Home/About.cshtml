@@ -4,4 +4,15 @@
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
+
 <p>Use this area to provide additional information.</p>
+<Button runat="server" Text="Button" type="button" onclick="testBtn()">Click here</Button>
+<Label runat="server" Text="Label" id="Lbltest">y</Label>
+
+
+
+<script>
+    function testBtn() {
+        document.getElementById("Lbltest").innerHTML = "Welcome";
+    }
+</script>

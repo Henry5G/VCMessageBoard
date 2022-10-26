@@ -28,3 +28,31 @@ textarea {
     background-color: #777;
     border-color: #fff
 }
+
+/* Center test */
+
+.login-bg {
+    background-color: gray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.horizontal-mid {
+    margin-top: 25%;
+}
+
+.off-screen {
+    position: absolute;
+    left: 0%;
+}
+
+.centered {
+    position: absolute;
+    left: 50%;
+}
+

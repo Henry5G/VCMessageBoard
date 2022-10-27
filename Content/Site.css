@@ -48,7 +48,7 @@ textarea {
 
 .off-screen {
     position: absolute;
-    left: 0%;
+    left: -50%;
 }
 
 .centered {
@@ -56,8 +56,8 @@ textarea {
     left: 50%;
 }
 
-/* Image text */
 
+/* Image text */
 .divination {
     height: 340px;
     width: 600px;

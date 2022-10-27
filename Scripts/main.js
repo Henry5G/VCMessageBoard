@@ -4,10 +4,10 @@
 
 }
 
-function Greet(name) {
+function FacultyPage() {
 
-    alert('Hello ' + name + "!");
-
+    document.location.href = "Home/Contact";
+    alert("Yes");
 }
 
 $(document).ready(function () {

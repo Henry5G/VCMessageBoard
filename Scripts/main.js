@@ -5,6 +5,9 @@
 }
 
 function FacultyPage() {
+    
+   
+
 
     document.location.href = "Home/Contact";
     alert("Yes");

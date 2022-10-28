@@ -1,36 +1,50 @@
-﻿@{
-    ViewBag.Title = "Faculty";
-    ViewBag.Message = "Choose a faculty.";
-}
-<h2>@ViewBag.Title.</h2> 
-<br/>
-<h3>@ViewBag.Message</h3>
+﻿
+<html>
 
-<br/>
-<div class="divination">
-    <span>Here</span>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-@*<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>*@
+<head>
+    <title>Ask a question</title>
+</head>
+<body>
+    <form>
+       
+        <div align="left">
+            <h1>Ask a question</h1>
+            Enter your student number:
+            <input type="text" name="UserName" size=35 maxlength=35 value="">
+            <!--Adds spaces - remove and see what happens -->
+            </br></br>
+            Select your faculty
+            <!--Select box lets you choose one of the multiple dropdown options-->
+            <select name="faculty">
+                <option value=1 selected="true">IT
+                <option value=2>Law
+                <option value=3>Education
+                <option value=4>Bussiness
+            </select>
+            </br></br>
+            Title:
+            <input type="text" name="title" size=35 maxlength=35 value="">
+            </br> </br>
+            What are the details of your problem?:</br>
+            <textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
+            <!--Do you exercise at home?-->
+            <!-- Radio buttons help you choose one out of the many values -->
+            <!--<input type="radio" name="exe" value=1>Yes
+    <input type="radio" name="exe" value=2>No
+    </p>
+    How do you like to read about your favorite topics?
+    <p>-->
+            <!--Checkbox lets you select multiple options -->
+            <!--<input type="checkbox" name="Books">Books
+        <input type="checkbox" name="Web">Online resources
+        <input type="checkbox" name="Phone">Phone apps
+        <input type="checkbox" name="Magazines">Magazines
+    </p>-->
+            
+            <!--submits the information entered in the form by the user -->
+            <input type=submit value="Submit Question">
+        </div>
+    </form>
+</body>
+</html>
 

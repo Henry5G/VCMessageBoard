@@ -56,7 +56,9 @@
             <br />
 
             @*onclick="FacultyPage()"*@
-            @*<input class="w-100 btn btn-lg btn-primary" type="button" onclick="location.href = '@Url.Action("")'">Sign in @Html.ActionLink()</input>*@
+            @*<input class="w-100 btn btn-lg btn-primary" type="button" onclick="location.href = '@Url.Action("Home", "testDB")'" value="Sign in">*@
+            @*<a onclick="@HTML." class="btn btn-primary btn-lg" style="margin-right:2%">Sign In &raquo;</a>*@
+            @Html.ActionLink("Sign In", "Messageboard", "Students", null, new { @class = "btn btn-default" })
             <button class="w-100 btn btn-lg btn-primary" id="signin-button" type="button">Register</button>
         </form>
     </div>

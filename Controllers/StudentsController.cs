@@ -14,6 +14,14 @@ namespace VCMessageBoard.Controllers
     {
         private VCMessageBoardDB db = new VCMessageBoardDB();
 
+
+        //MESSAGEBOARD
+        public ActionResult Messageboard()
+        {
+            return View();
+        }
+
+
         // GET: Students
         public ActionResult Index()
         {

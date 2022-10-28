@@ -1,17 +1,38 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿
+<html>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<head>
+    <title>Ask a question</title>
+</head>
+<body>
+    <form>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+        <div align="left">
+            <h1>Ask a question</h1>
+            Enter your student number:
+            <input type="text" name="UserName" size=35 maxlength=35 value="">
+            <!--Adds spaces - remove and see what happens -->
+            <br />
+            <br />
+            Select your faculty
+            <!--Select box lets you choose one of the multiple dropdown options-->
+            <select name="faculty">
+                <option value=1 selected="true">IT
+                <option value=2>Law
+                <option value=3>Education
+                <option value=4>Bussiness
+            </select>
+            <br/><br/>
+            Title:
+            <input type="text" name="title" size=35 maxlength=35 value="">
+            <br/> <br/>
+            What are the details of your problem?:</br>
+            <textarea name="Comments" cols=30 rows=4></textarea> 
+            <br/> 
+            <br/>
+            <input type=submit value="Submit Question">
+        </div>
+    </form>
+</body>
+</html>
+

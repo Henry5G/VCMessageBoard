@@ -28,3 +28,40 @@ textarea {
     background-color: #777;
     border-color: #fff
 }
+
+/* Center test */
+
+.login-bg {
+    background-color: gray;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.horizontal-mid {
+    margin-top: 25%;
+}
+
+.off-screen {
+    position: absolute;
+    left: -50%;
+}
+
+.centered {
+    position: absolute;
+    left: 50%;
+}
+
+
+/* Image text */
+.divination {
+    height: 340px;
+    width: 600px;
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url(../Assets/istockphoto-1295900106-612x612.jpg);
+}

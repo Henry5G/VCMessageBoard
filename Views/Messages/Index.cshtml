@@ -1,0 +1,39 @@
+﻿@model IEnumerable<VCMessageBoard.Models.Message>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message1)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message1)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MessageID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MessageID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MessageID })
+        </td>
+    </tr>
+}
+
+</table>

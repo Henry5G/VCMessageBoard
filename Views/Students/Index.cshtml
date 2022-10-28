@@ -5,14 +5,18 @@
 }
 
 <h2>Index</h2>
-
+<br />
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+<br/> 
+<br/>
+
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Password)
+            @Html.DisplayNameFor(model => model.StudentNum)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Email)
@@ -38,7 +42,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Password)
+            @Html.DisplayFor(modelItem => item.StudentNum)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Email)
